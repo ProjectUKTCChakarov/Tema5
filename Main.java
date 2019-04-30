@@ -211,6 +211,10 @@ class Point {
         return (Double.compare( D, 0.0 ) == 0 )?b.getDistanceToPoint( this ):D ;
     }
 
+    public boolean equals( Point b ){
+        return ( Double.compare(b.getX() , this.getX() ) == 0 && Double.compare(b.getY() , this.getY() ) == 0 );
+    }
+    
     @Override
     public String toString() {
         return "Point{" +
