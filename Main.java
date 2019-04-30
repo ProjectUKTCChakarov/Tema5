@@ -9,12 +9,13 @@ public class Main {
 
     public static void main(String[] args) {
         List<Point> place = new ArrayList<Point>();
-          //#if_define debug
+        //#if_define debug
+        /*
             place.add( new Point( 10, 10 ));
             place.add( new Point( 20, 20 ));
             place.add( new Point( 30, 30 ));
             place.add( new Point( 40, 40 ));
-
+        */
         Scanner input_terminal = new Scanner( System.in );
         boolean flag_work = true;
 
