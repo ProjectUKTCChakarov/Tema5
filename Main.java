@@ -153,30 +153,6 @@ public class Main {
                         }
                     }
 
-
-
-
-                    /*
-                    for( int a = 0; a < place.size(); a++ ){
-                        Point _A = place.get( a );
-
-                        for( int b = 1 ; b < place.size(); b++ ) {
-                            Point _B = place.get( b );
-                            double _D = _A.getDistanceToPoint( _B );
-
-                            /*
-                            System.out.println( " D ? " + a + _A + "  < --- > " + b+ _B + "   = " + _A.getDistanceToPoint( _B ) + "      min dist = " + D );
-                            int stat = Double.compare( D , _D );
-                            if( flag_first || stat >= 0  ) {
-                                flag_first = false;
-                                D = _D;
-                                if( stat != 0 ) eqdispoints.clear();
-                                else eqdispoints.put( new Integer[]{ a, b }  , new Point[]{_A, _B} );
-                            }
-                        }
-                    }*/
-
-
                     // output
                     System.out.println( ( eqdispoints.isEmpty() )? "No result.": "Minimal distance = " + D + " with " + (( eqdispoints.size() == 1 )?" point":"points") + ": " );
                     eqdispoints.forEach( ( indexes, points ) -> {
