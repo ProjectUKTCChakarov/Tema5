@@ -206,9 +206,11 @@ class Point {
                 |
 
            D<ab> = sqrt( ( xb - xa )^ + ( yb - ya )^ )   if the difference is equal to or less than 0 D is ZERO, next -> flip
-        */
+        
         double D = Math.sqrt( Math.pow(( b.getX() - this.getY() ), 2) + Math.pow(( b.getY() - this.getY() ), 2) );
         return (Double.compare( D, 0.0 ) == 0 )?b.getDistanceToPoint( this ):D ;
+        */
+        return Math.sqrt( Math.pow(( b.getX() - this.getY() ), 2) + Math.pow(( b.getY() - this.getY() ), 2) );
     }
 
     public boolean equals( Point b ){
