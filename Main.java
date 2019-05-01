@@ -145,6 +145,7 @@ public class Main {
                                 eqdispoints.put( new Integer[]{ a, b }  , new Point[]{_A, _B} );
 
                             }else if( stat > 0 ){ // D > _D
+                                D = _D;
                                 eqdispoints.clear();
                                 eqdispoints.put( new Integer[]{ a, b }  , new Point[]{_A, _B} );
 
